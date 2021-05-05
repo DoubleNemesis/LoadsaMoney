@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+body {
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px;
+  padding: 0;
+  background: midnightblue;
+}
+
+.App {
+  text-align: center;
+}
+
+/* text */
+h1 {
+  color: #006400;
+  font-size: 2em;
+  background-color: white;
+  padding: .2em .8em;
+  border-radius: .5em;
+}
+
+h5 {
+  margin: 0 0 0.8em 0;
+  font-size: 1.3em;
+  color: darkgreen;
+}
+
+.budgetRemaining {
+  font-size: 2em;
+  margin-top: 0.5em;
+  color: yellow;
+}
+
+.budgetRemaining.red {
+  color: red;
+}
+
+.price{
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* sections */
+.header {
+  border-bottom: 1px solid whitesmoke;
+  background-image: url('https://www.tomsclassroom.com/winter.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+}
+
+.product {
+  background-color: white;
+  color: #333;
+  margin: 0.9em;
+  border-radius: 0.5em;
+  padding: 1em 1em;
+  justify-self: center;
+  max-width: 350px;
+}
+
+.budget {
+  border: 1px solid whitesmoke;
+  padding: 0.7em;
+  border-radius: 0.5em;
+}
+
+.setBudget {
+  margin: 1em auto;
+  color: yellow;
+  font-size: 1.5em;
+  width: 50vw;
+}
+
+.footer {
+  padding: 4em 0 0.11em 0;
+  position: relative;
+}
+
+.checkBox {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input[type="number"] {
+  cursor: text;
+  border-radius: 0.5em;
+  font-size: 1em;
+  width: 45vw;
+  padding: 0.3em;
+  margin-top: 1em;
+  color: #333;
+  border: none;
+}
+
+.buttons {
+  margin: 1em 0 ;
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+
+.button {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 0.7em 1em;
+  font-size: 1em;
+  margin: 0 0.1em;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: background-color .5s, color .5s;
+}
+
+.button:hover {
+  background-color: yellow;
+  color: #333;
+}
+
+.button:active {
+  background-color: red;
+  font-size: 0.99em;
+}
+
+img {
+  width: 50px;
+}
+
+@media (min-width: 900px) {
+  /* body{
+    background: orange;
+  } */
+
+  .main {
+    display: unset;
+  }
+
+  .mainInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .infoArea {
+    display: flex;
+    margin: 1em;
+    justify-content: space-evenly;
+  }
+
+  .buttons{
+    width: 50vw
+  }
+
+  .budget {
+    text-align: center;
+    /* border: none; */
+  }
+
+  .product {
+    background-color: white;
+    color: #333;
+    margin: 0.3em;
+    border-radius: 0.5em;
+    padding: 1em 1em;
+    max-width: 300px;
+  }
+
+  .setBudget {
+    max-width: 400px;
+    color: yellow;
+    font-size: 1.5em;
+    margin: 2.5em auto;
+  }
+
+  input[type="number"] {
+    max-width: 450px;
+    display: block;
+    margin: 1em auto;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    max-width: 15em;
+    margin: .8em auto;
+  }
+}
